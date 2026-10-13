@@ -1,0 +1,369 @@
+/* ==========================================================================
+   SAI GANESH PORTFOLIO - RESPONSIVE STYLESHEET
+   Carefully tuned breakpoints (1440px, 1024px, 768px, 375px, 320px)
+   ========================================================================== */
+
+/* --- Large Desktops (1440px and above) --- */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  .hero-name {
+    font-size: 4rem;
+  }
+
+  .hero-profession {
+    font-size: 3rem;
+  }
+
+  .portrait-wrapper {
+    width: 420px;
+    height: 420px;
+  }
+
+  .glow-backdrop, .ring-backdrop {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+/* --- Laptops & Desktops (1024px - 1200px) --- */
+@media (max-width: 1200px) {
+  .featured-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .about-achieve-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .about-middle-col {
+    grid-column: 1 / -1;
+    order: -1;
+    margin-bottom: 10px;
+  }
+
+  .skills-software-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --- Tablets & Small Laptops (769px - 1024px) --- */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-services-tags {
+    justify-content: center;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-social-block {
+    justify-content: center;
+  }
+
+  .hero-right {
+    min-height: 360px;
+  }
+
+  .scroll-down-box {
+    display: none;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-art-col {
+    display: none;
+  }
+
+  .detailed-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  .portfolio-grid-full {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-img-container {
+    max-height: 300px;
+  }
+
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-hero-grid .portrait-wrapper {
+    margin: 0 auto;
+  }
+}
+
+/* --- Mobile Landscape & Tablets (481px - 768px) --- */
+@media (max-width: 768px) {
+  /* Mobile Navigation Bar */
+  .hamburger {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: var(--bg-section);
+    border-left: 1px solid var(--border-color);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 28px 40px;
+    gap: 20px;
+    transition: right var(--transition-normal);
+    z-index: 1000;
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.8);
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-actions .btn-hire {
+    display: none;
+  }
+
+  /* Content Panel Padding */
+  .content-panel {
+    padding: 30px 20px;
+    border-radius: var(--radius-lg);
+    margin: 28px auto;
+  }
+
+  .hero-name {
+    font-size: 2.8rem;
+  }
+
+  .hero-profession {
+    font-size: 2.2rem;
+  }
+
+  .portrait-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .glow-backdrop, .ring-backdrop {
+    width: 260px;
+    height: 260px;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .about-achieve-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-row {
+    grid-template-columns: 1fr;
+  }
+
+  .detailed-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid-full {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-bars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top-row, .footer-bottom-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+
+  /* Custom cursor disabled on touch devices */
+  .custom-cursor-dot,
+  .custom-cursor-outline {
+    display: none !important;
+  }
+}
+
+/* --- Mobile Standard (375px - 480px) --- */
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 2.3rem;
+  }
+
+  .hero-profession {
+    font-size: 1.8rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row-two {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-tabs {
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 6px;
+    flex-wrap: nowrap;
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+  }
+
+  .portrait-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+
+  .glow-backdrop, .ring-backdrop {
+    width: 220px;
+    height: 220px;
+  }
+
+  .skills-software-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-hero-title {
+    font-size: 2.1rem;
+  }
+}
+
+/* --- Small Mobile (320px) --- */
+@media (max-width: 340px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .content-panel {
+    padding: 24px 14px;
+  }
+
+  .hero-name {
+    font-size: 1.95rem;
+  }
+
+  .service-tag-line {
+    font-size: 0.72rem;
+  }
+
+  .btn {
+    font-size: 0.82rem;
+    padding: 9px 18px;
+  }
+}
+
+/* Research Showcase Responsive */
+@media (max-width: 900px) {
+  .research-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 540px) {
+  .research-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+  .research-title-main {
+    font-size: 1.15rem;
+  }
+}
+

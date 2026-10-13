@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Gallery | Mudu Ganesh Designer & Developer</title>
+  <meta name="description" content="Explore the creative design portfolio of Mudu Ganesh featuring movie posters, brand identities, logos, social media campaigns, and web UI concepts.">
+  
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header class="header-nav" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Mudu Ganesh Homepage">
+        <span class="logo-main cursive-brand">Mudu <span class="logo-orange">Ganesh</span></span>
+        <span class="logo-sub">Designer & Developer</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">FAQ</a>
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" title="Toggle Theme" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="contact.html" class="btn-hire">Hire Me <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <button id="hamburger-btn" class="hamburger" aria-label="Open Navigation Menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right" style="font-size: 0.65rem;"></i>
+          <span>Portfolio</span>
+        </div>
+        <h1 class="page-hero-title">Selected <span class="highlight-orange">Works</span></h1>
+        <p class="page-hero-subtitle">
+          A showcase of branding, posters, digital graphics, and UI design crafted for maximum visual impact and measurable results.
+        </p>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO GALLERY SECTION -->
+    <section class="container" id="gallery-container">
+      <div class="content-panel">
+        <!-- Controls: Filter Tabs & Search Bar -->
+        <div class="portfolio-controls-bar">
+          <div class="filter-tabs" role="tablist">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="posters">Posters</button>
+            <button class="filter-btn" data-filter="social">Social Media</button>
+            <button class="filter-btn" data-filter="invitations">Invitations</button>
+            <button class="filter-btn" data-filter="logos">Logos</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="web">Web Design</button>
+            <button class="filter-btn" data-filter="thumbnails">Thumbnails</button>
+          </div>
+
+          <div class="search-box-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="portfolio-search" class="search-input" placeholder="Search projects by keyword...">
+          </div>
+        </div>
+
+        <!-- 12 Project Entries Grid -->
+        <div class="portfolio-grid-full" id="projects-grid">
+
+          <!-- Item 2: Meghana Restaurant Poster -->
+          <div class="project-card" data-category="posters" data-title="Meghana Family Restaurant Re-Opening" data-category-label="Restaurant Poster" data-desc="Grand re-opening commercial promotional poster with authentic Telugu typography, festive food branding, special offers, and QR code integration.">
+            <div class="project-img-wrapper">
+              <img src="assets/images/meghana-restaurant-poster.jpg" alt="Meghana Family Restaurant Grand Re-Opening Poster" loading="lazy">
+              <div class="project-overlay">
+                <span class="overlay-btn view-project-trigger"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-category">Poster Design</span>
+              <h3 class="project-title">Meghana Restaurant Poster</h3>
+            </div>
+          </div>
+
+          <!-- Item 3: Harvest Kitchen Indian Food Poster -->
+          <div class="project-card" data-category="social" data-title="Harvest Kitchen Indian Restaurant Ad" data-category-label="Social Media Ad" data-desc="Vibrant food marketing campaign design showcasing traditional Indian delicacies (Pani Puri) with golden hanging lanterns, warm palette, and clear call-to-action.">
+            <div class="project-img-wrapper">
+              <img src="assets/images/harvest-kitchen-poster.png" alt="Harvest Kitchen Indian Food Poster" loading="lazy">
+              <div class="project-overlay">
+                <span class="overlay-btn view-project-trigger"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-category">Social Media Post</span>
+              <h3 class="project-title">Harvest Kitchen Food Ad</h3>
+            </div>
+          </div>
+
+          <!-- Item 4: Haldi Ceremony Wedding Invitation -->
+          <div class="project-card" data-category="invitations" data-title="Haldi Ceremony - Rahul & Richa" data-category-label="Wedding Invitation" data-desc="Traditional Indian wedding ceremony poster featuring custom couple vector illustration, marigold floral garlands, ethnic aesthetic, and festive color harmonies.">
+            <div class="project-img-wrapper">
+              <img src="assets/images/haldi-ceremony-poster.jpg" alt="Haldi Ceremony Invitation Poster" loading="lazy">
+              <div class="project-overlay">
+                <span class="overlay-btn view-project-trigger"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-category">Event Invitation</span>
+              <h3 class="project-title">Haldi Ceremony Invitation</h3>
+            </div>
+          </div>
+
+          <!-- Item 5: Birthday Party Invitation -->
+          <div class="project-card" data-category="invitations" data-title="Pastel Birthday Party Invitation" data-category-label="Event Invitation" data-desc="Celebratory pastel birthday party invitation card featuring festive party poppers, birthday cakes, balloons, ribbons, and elegant event typography.">
+            <div class="project-img-wrapper">
+              <img src="assets/images/birthday-invitation.png" alt="Birthday Party Invitation Card Design" loading="lazy">
+              <div class="project-overlay">
+                <span class="overlay-btn view-project-trigger"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-category">Event Invitation</span>
+              <h3 class="project-title">Birthday Party Card</h3>
+            </div>
+          </div>
+
+          <!-- Item 6: The Secret of Mahabharat -->
+          <div class="project-card" data-category="posters" data-title="The Secret of Mahabharat" data-category-label="Poster Design" data-desc="High-concept mythological cinematic movie poster design featuring dramatic golden lighting, ornate Sanskrit typographic treatments, and layered fantasy composition.">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-1.jpg" alt="The Secret of Mahabharat" loading="lazy">
+              <div class="project-overlay">
+                <span class="overlay-btn view-project-trigger"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-category">Poster Design</span>
+              <h3 class="project-title">The Secret of Mahabharat</h3>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="project-card" data-category="web" data-title="Cure Connect Healthcare" data-category-label="Website Design" data-desc="Clean, reassuring medical clinic website landing page mockup designed with intuitive doctor appointment booking and patient portal navigation.">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-6.jpg" alt="Cure Connect Healthcare" loading="lazy">
+              <div class="project-overlay">
+                <span class="overlay-btn view-project-trigger"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-category">Website Design</span>
+              <h3 class="project-title">Cure Connect Healthcare</h3>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="project-card" data-category="thumbnails" data-title="Apex Gaming YouTube Thumbnail" data-category-label="Thumbnails" data-desc="Ultra high-CTR gaming YouTube thumbnail design featuring high-contrast neon orange accents, dramatic expression isolation, and bold 3D typography.">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-7.jpg" alt="Apex Gaming YouTube Thumbnail" loading="lazy">
+              <div class="project-overlay">
+                <span class="overlay-btn view-project-trigger"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-category">Thumbnails</span>
+              <h3 class="project-title">Apex Gaming 4K Thumbnail</h3>
+            </div>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="project-card" data-category="branding" data-title="Lumen Aura Luxury Brand Identity" data-category-label="Branding" data-desc="Complete premium branding suite featuring gold-foil foil business cards, luxury stationery, serif typography guidelines, and packaging layout.">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-8.jpg" alt="Lumen Aura Brand Identity" loading="lazy">
+              <div class="project-overlay">
+                <span class="overlay-btn view-project-trigger"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-category">Branding</span>
+              <h3 class="project-title">Lumen Aura Brand Suite</h3>
+            </div>
+          </div>
+
+          <!-- Item 9 -->
+          <div class="project-card" data-category="posters" data-title="Cyber Sounds Electronic Festival" data-category-label="Poster Design" data-desc="Futuristic EDM music festival poster with cybernetic neon lighting, distressed distortion typography, and festival lineup schedule hierarchy.">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-9.jpg" alt="Cyber Sounds Music Festival" loading="lazy">
+              <div class="project-overlay">
+                <span class="overlay-btn view-project-trigger"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-category">Poster Design</span>
+              <h3 class="project-title">Cyber Sounds Festival</h3>
+            </div>
+          </div>
+
+          <!-- Item 10 -->
+          <div class="project-card" data-category="web" data-title="FinPulse Mobile & Web Dashboard" data-category-label="Website Design" data-desc="Next-generation financial analytics web application dashboard with real-time portfolio charts, dark glassmorphic cards, and intuitive wallet controls.">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-10.jpg" alt="FinPulse Dashboard UI" loading="lazy">
+              <div class="project-overlay">
+                <span class="overlay-btn view-project-trigger"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-category">Website Design</span>
+              <h3 class="project-title">FinPulse Web Dashboard</h3>
+            </div>
+          </div>
+
+          <!-- Item 11 -->
+          <div class="project-card" data-category="social" data-title="Spice Route Restaurant Campaign" data-category-label="Social Media Post" data-desc="Delectable culinary marketing social carousel campaign showcasing authentic gourmet flavors, seasonal specials, and Instagram foodie engagement.">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-11.jpg" alt="Spice Route Social Campaign" loading="lazy">
+              <div class="project-overlay">
+                <span class="overlay-btn view-project-trigger"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-category">Social Media Post</span>
+              <h3 class="project-title">Spice Route Social Post</h3>
+            </div>
+          </div>
+
+          <!-- Item 12 -->
+          <div class="project-card" data-category="web" data-title="Nexus Robotics AI Landing Page" data-category-label="Website Design" data-desc="Cutting-edge enterprise robotics landing page mockup featuring 3D hardware render integration, feature showcase cards, and developer documentation CTA.">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-12.jpg" alt="Nexus Robotics AI Page" loading="lazy">
+              <div class="project-overlay">
+                <span class="overlay-btn view-project-trigger"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-category">Website Design</span>
+              <h3 class="project-title">Nexus Robotics AI Page</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Empty Search State -->
+        <div id="portfolio-empty-state" class="empty-state" style="display: none;">
+          <i class="fa-solid fa-folder-open"></i>
+          <h3>No matching projects found</h3>
+          <p>Try searching with another keyword or selecting a different category filter.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Project Preview">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-body">
+        <div class="modal-img-container">
+          <img src="" alt="Project Preview" id="modal-img">
+        </div>
+        <div class="modal-details">
+          <div>
+            <span class="modal-tag" id="modal-category">Design</span>
+            <h3 class="modal-title" id="modal-title">Project Title</h3>
+            <p class="modal-desc" id="modal-desc">Detailed project description goes here.</p>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px;">
+            <a href="contact.html" class="btn btn-primary btn-sm">Start Similar Project</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="modal-link-btn" style="display: none;">View Publication</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919912262559?text=Hello%20Mudu%20Ganesh,%20I%20would%20like%20to%20discuss%20a%20project!" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="whatsapp-floating whatsapp-float-btn" 
+     title="Chat on WhatsApp" 
+     aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top" title="Back to top" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-row">
+        <a href="index.html" class="brand-logo">
+          <span class="logo-main cursive-brand">Mudu <span class="logo-orange">Ganesh</span></span>
+          <span class="logo-sub">Designer & Developer</span>
+        </a>
+
+        <div class="footer-nav">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="portfolio.html" class="footer-link">Portfolio</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="pricing.html" class="footer-link">FAQ</a>
+          <a href="about.html" class="footer-link">About Me</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">© 2025 Mudu Ganesh. All Rights Reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com/Ganesh672-Sai" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mudavath-ganesh-01b99825a" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://medium.com/@muduganesh49" target="_blank" rel="noopener noreferrer" class="social-link" title="Medium" aria-label="Medium">
+            <i class="fa-brands fa-medium"></i>
+          </a>
+          <a href="https://www.instagram.com/sai_star_677" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/919912262559" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
